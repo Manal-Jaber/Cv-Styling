@@ -1,0 +1,230 @@
+header div{
+    background-color: rgb(153, 153, 153);
+}
+hgroup{
+    color: red;
+}
+h3{
+    border-bottom: solid;
+    border-color: lightgray;
+    border-width: thin;
+}
+h4{
+    color: red;
+    margin-bottom: 2%;
+}
+#about{
+    float: left;
+    width: 40%;
+    padding-left: 10%;
+    margin-top: 2%;
+}
+#about h3::before{
+    content: "\2022";
+    color: red;
+    font-size: 3em;
+    vertical-align: middle;
+}
+#competencies{
+    float: left;
+    width: 40%;
+    padding-right: 10%;
+}
+#competencies h3::before{
+    content: "\2022";
+    color: red;
+    font-size: 3em;
+    vertical-align: middle;
+}
+.skills-primary::before{
+    content: "Main";
+}
+.skills-secondary::before{
+    content: "Other";
+}
+.skills-primary{
+    margin-bottom: 3%;
+}
+.skills-secondary{
+    opacity: 75%;
+}
+.skill{
+    font-size: 110%;
+    color: white;
+    border: 0.4rem solid lightgray;
+    padding: 1%;
+    margin-bottom: 1%;
+}
+[data-skill^="5"]{
+    background: linear-gradient(90deg, red 50%, lightgray 50%);
+}
+[data-skill^="3"]{
+    background: linear-gradient(90deg, red 30%, lightgray 30%);
+}
+[data-skill^="1"]{
+    background: linear-gradient(90deg, red 10%, lightgray 10%);
+}
+[data-skill^="9"]{
+    background: linear-gradient(90deg, red 90%, lightgray 90%);
+}
+[data-skill^="7"]{
+    background: linear-gradient(90deg, red 70%, lightgray 70%);
+}
+#experiences{
+    float: left;
+    width: 40%;
+    padding-left: 10%;
+}
+#experiences h3::before{
+    content: "\2022";
+    color: red;
+    font-size: 3em;
+    vertical-align: middle;
+}
+.experience-institution::before{
+    content: "@";
+    color: red;
+    font-weight: lighter;
+}
+.experience-institution{
+    font-weight: lighter;
+}
+.experience-details::before{
+    content: "In ";
+}
+.experience-details{
+    color: lightslategray;
+    padding-left: 3%;
+}
+.experience-date-separator{
+    color: red;
+}
+#education{
+    float: left;
+    width: 40%;
+    padding-right: 10%;
+}
+#education h3::before{
+    content: "\2022";
+    color: red;
+    font-size: 3em;
+    vertical-align: middle;
+}
+#hobbies{
+    float: left;
+    width: 40%;
+    padding-left: 10%;    
+}
+#hobbies h3::before{
+    content: "\2022";
+    color: red;
+    font-size: 3em;
+    vertical-align: middle;
+}
+#hobbies ul{
+    padding-left: 12%;
+}
+
+dl{
+    display: flex;
+    flex-flow: row wrap;
+    width: 300%;
+    margin: 0;
+}
+dt{
+    flex-basis: 18%;
+    background-color: red;
+    color: white;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+dd{
+    flex-basis: 80%;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    padding-left: 1%;
+}
+.contact-skype .contact-value{
+    color: black;
+}
+dl a{
+    text-decoration: none;
+    color: red;
+}
+@media only screen and (min-width: 600px) {
+header div{
+    display: flex;
+    flex-direction: row;
+    padding-left: 10%;
+}
+#wrapper{
+    position: relative;
+    z-index: -1;
+}
+#contact{
+    position: absolute;
+    z-index: 1;
+    top: 2%;
+    left: 47%;
+}
+#competencies{
+    margin-top: 2%;
+}
+#contact h3{
+    display: none;
+}
+}
+@media only screen and (max-width: 600px) {
+#wrapper{
+    size: 100%;
+}
+header div{
+    padding: 10%;
+}
+figure{
+    margin-left: 3%;
+}
+#about{
+    padding-left: 5%;
+    width: 95%;
+}
+#competencies{
+    padding-left: 5%;
+    width: 95%;
+}
+#experiences{
+    padding-left: 5%;
+    width: 95%;
+}
+#education{
+    padding-left: 5%;
+    width: 95%;
+}
+#hobbies{
+    padding-left: 5%;
+    width: 95%;
+}
+#contact{
+    padding-left: 5%;
+    width: 95%;
+}
+#contact h3::before{
+    content: "\2022";
+    color: red;
+    font-size: 3em;
+    vertical-align: middle;
+}
+dl{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+}
+dt{
+    flex-basis: 31%;
+}
+dd{
+    flex-basis: auto;
+    background-color: white;
+}
+}
